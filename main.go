@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	// var card string = "Ace of Spades"
 	// card := newCard()
-	cards := []string{"Ace of Diamonds", newCard()}
+	cards := deck{"Ace of Diamonds", newCard()}
 	cards2 := append(cards, "Six of Spades") // Note that the original slice is not modified
 
 	fmt.Println(cards)
