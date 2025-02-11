@@ -1,19 +1,16 @@
 package main
 
-import "fmt"
-
 func main() {
 	// var card string = "Ace of Spades"
 	// card := newCard()
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards2 := append(cards, "Six of Spades") // Note that the original slice is not modified
+	// cards := deck{"Ace of Diamonds", newCard()}
+	// cards2 := append(cards, "Six of Spades") // Note that the original slice is not modified
 
-	fmt.Println(cards)
-	fmt.Println(cards2)
+	// fmt.Println(cards)
+	// fmt.Println(cards2)
 
-	cards.print()
-}
+	// cards.print()
 
-func newCard() string {
-	return "Five of Diamonds"
+	deck1 := newDeck()
+	deck1.print()
 }
