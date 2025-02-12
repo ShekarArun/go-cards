@@ -22,5 +22,5 @@ func main() {
 	fmt.Println("Remaining deck:")
 	remainingDeck.print()
 
-	fmt.Println(hand.toString())
+	hand.saveToFile("hand.txt")
 }
