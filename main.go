@@ -21,4 +21,6 @@ func main() {
 	hand.print()
 	fmt.Println("Remaining deck:")
 	remainingDeck.print()
+
+	fmt.Println(hand.toString())
 }
