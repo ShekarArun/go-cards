@@ -27,4 +27,8 @@ func main() {
 	deck2 := newDeckFromFile("hand.txt")
 	fmt.Println("Deck2:")
 	deck2.print()
+
+	fmt.Println("Intentionally loading a non-existent file:")
+	deck3 := newDeckFromFile("non-existent.txt")
+	deck3.print()
 }
