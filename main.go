@@ -28,7 +28,12 @@ func main() {
 	fmt.Println("Deck2:")
 	deck2.print()
 
-	fmt.Println("Intentionally loading a non-existent file:")
-	deck3 := newDeckFromFile("non-existent.txt")
-	deck3.print()
+	// fmt.Println("Intentionally loading a non-existent file:")
+	// deck3 := newDeckFromFile("non-existent.txt")
+	// deck3.print()
+
+	fmt.Println("Testing shuffle:")
+	deck4 := newDeck()
+	deck4.shuffle()
+	deck4.print()
 }
