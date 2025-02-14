@@ -22,5 +22,9 @@ func main() {
 	fmt.Println("Remaining deck:")
 	remainingDeck.print()
 
-	hand.saveToFile("hand.txt")
+	fmt.Println(hand.saveToFile("hand.txt"))
+
+	deck2 := newDeckFromFile("hand.txt")
+	fmt.Println("Deck2:")
+	deck2.print()
 }
